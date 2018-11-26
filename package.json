@@ -1,0 +1,11 @@
+{
+  "name": "node-k8s-minimal-config",
+  "version": "1.0.0",
+  "description": "Minimal configuration to run Node.js cluster with k8s",
+  "main": "index.js",
+  "author": "FieryCod <kwcharllie379@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
