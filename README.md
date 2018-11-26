@@ -89,8 +89,11 @@ in other window type
 ```
 for i in `seq 1 10000`; do curl -w '\n' http://192.168.99.100:31790/; done # Remember to replace the url here :D
 ```
-now you should see some colors 🌈🍕❤️
+Now you should see some colors 🌈🍕❤️
+
+
 ![](https://raw.githubusercontent.com/FieryCod/node-k8s-minimal-config/master/images/running_cluster.png)
+
 ## Troubleshooting
 
 If for some reason the minikube hangs try the following commands: 🔥
