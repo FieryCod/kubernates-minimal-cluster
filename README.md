@@ -1,4 +1,4 @@
-# How to configure Kubernetes minimal cluster 🛠 
+# How to configure Kubernetes minimal cluster
 
 ## Prerequisites ⚠️
 
@@ -39,7 +39,7 @@ eval $(minikube docker-env)
 
 ## Getting cluster ran 😱🤩
 
-1. In order to check how Kubernetes dashboard looks like run the command: 
+1. In order to check how Kubernetes dashboard looks like run the command:
 ```
 minikube dashboard
 ```
@@ -71,11 +71,11 @@ The reason is simple: The pods within the cluster are only accesible by their's 
 kubectl expose deployment node-app-instance --type=LoadBalancer
 ```
 
-8. That's not all because as we're using minikube locally we also have to start the service from minikube. This command should open your web browser. 
+8. That's not all because as we're using minikube locally we also have to start the service from minikube. This command should open your web browser.
 ```
 minikube service node-app-instance
 ```
-9. That's all! You probably now running your first cluster in life. Good job! :tada: :tada: :tada: 
+9. That's all! You probably now running your first cluster in life. Good job! :tada: :tada: :tada:
 
 Hint: You can take all logs from all containers using the label we've created in step 3. In order to do it continuosly we will use [Kubetail](https://github.com/johanhaleby/kubetail).
 ```
