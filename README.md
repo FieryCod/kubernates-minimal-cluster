@@ -5,34 +5,26 @@
 In order to run your very minimal Kubernetes cluster you have to firstly install all of the following software.
 All installation commands we are using here are for MacOSX users so please bear in mind that the installation process might vary for your OS.
 
-1. Install Docker 🐳
-```
-brew cask install docker
-```
+Kudos goes to @k911 who gave me a hint the we don't have to seperetely install docker since minikube is sufficient and setups it for us.
 
-2. Install Virtualbox 🗄
+1. Install Virtualbox 🗄
 ```
 brew cask install virtualbox
 ```
 
-3. Enable Kubernetes in your Docker configuration.
-![How to enable Kubernetes in MacOSX Docker application](https://github.com/FieryCod/node-k8s-minimal-config/blob/master/images/enable_kubernetes.png?raw=true)
-
-4. Restart the computer and run `docker --version` if the output is something like `Docker version 18.09.0, build 4d60db4` then proceed
-
-5. Install minikube
+2. Install minikube
 ```
 brew cask install minikube
 ```
 
-6. Restart terminal
+3. Restart terminal
 
-7. Start minikube
+4. Start minikube
 ```
 minikube start
 ```
 
-8. Configure shell and read carefully the next section
+5. Configure shell and read carefully the next section. This will make docker command available in your current shell.
 ```
 eval $(minikube docker-env)
 ```
