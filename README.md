@@ -5,26 +5,30 @@
 In order to run your very minimal Kubernetes cluster you have to firstly install all of the following software.
 All installation commands we are using here are for MacOSX users so please bear in mind that the installation process might vary for your OS.
 
-Kudos goes to @k911 who gave me a hint the we don't have to seperetely install docker since minikube is sufficient and setups it for us.
+Kudos goes to @k911 who gave me a hint the we don't have to seperetely setup docker since minikube is sufficient and setups it for us.
 
-1. Install Virtualbox 🗄
+1. Install Docker 🐳
+```
+brew cask install docker
+```
+2. Install Virtualbox 🗄
 ```
 brew cask install virtualbox
 ```
 
-2. Install minikube
+3. Install minikube
 ```
 brew cask install minikube
 ```
 
-3. Restart terminal
+4. Restart terminal
 
-4. Start minikube
+5. Start minikube
 ```
 minikube start
 ```
 
-5. Configure shell and read carefully the next section. This will make docker command available in your current shell.
+6. Configure shell and read carefully the next section. This will make docker command available in your current shell.
 ```
 eval $(minikube docker-env)
 ```
